@@ -36,9 +36,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
   * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
   * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-  * |      |      |      |      |      |      |-------.    ,-------|      | LEFT |RIGHT |  UP  | DOWN |      |
+  * |LCTRL |      |      |      |      |      |-------.    ,-------|      |      |      | HOME |  UP  | END  |
   * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
-  * |      |      |      |      |      |      |-------|    |-------|      |      |      |      |      |      |
+  * |LSHIFT|      |      |      |      |      |-------|    |-------|      |      |      | LEFT | DOWN |RIGHT |
   * `-----------------------------------------/       /     \      \-----------------------------------------'
   *                   | LALT | LGUI |LOWER | /       /       \      \  |ADJUST| RGUI | RALT |
   *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -47,8 +47,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_LOWER] = LAYOUT( \
     KC_GRV, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MINS, KC_EQL, \
     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
-    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LEFT, KC_RGHT, KC_UP, KC_DOWN, KC_NO, \
-    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+    KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_HOME, KC_UP, KC_END, \
+    KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, \
     KC_LALT, KC_LGUI, MO(_LOWER), KC_SPC, KC_ENT, MO(_ADJUST), KC_RGUI, KC_RALT \
   ),
 
@@ -56,9 +56,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * ,-----------------------------------------.                    ,-----------------------------------------.
   * |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |
   * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-  * |      |      |  UP  |      |      |      |                    |      |      |      |      |      |      |
+  * |      |      |      |      |      |      |                    |      |      |      |      |      |      |
   * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-  * |      | LEFT | DOWN |RIGHT |      |      |-------.    ,-------|      | HOME | END  | PGUP |PGDWN |      |
+  * |      |      |      |      |      |      |-------.    ,-------|      |      |      |      |      |      |
   * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
   * | MUTE | VOL+ | VOL- |      | BR+  | BR-  |-------|    |-------|      |      |      |      |      |      |
   * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -68,8 +68,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
   [_RAISE] = LAYOUT( \
     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, \
-    KC_NO, KC_NO, KC_UP, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
-    KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_NO, KC_NO, KC_HOME, KC_END, KC_PGUP, KC_PGDN, KC_NO, \
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
     KC_MUTE, KC_VOLU, KC_VOLD, KC_NO, KC_BRIU, KC_BRID, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
     KC_LALT, KC_LGUI, MO(_ADJUST), KC_SPC, KC_ENT, MO(_RAISE), KC_RGUI, KC_RALT \
   ),
