@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
   * |LSHIFT|      |      |      |      |      |-------|    |-------|      |      |      | LEFT | DOWN |RIGHT |
   * `-----------------------------------------/       /     \      \-----------------------------------------'
-  *                   | LALT | LGUI |LOWER | /       /       \      \  |ADJUST| RGUI | RALT |
+  *                   | LALT | LGUI |LOWER | /       /       \  DEL \  |ADJUST| RGUI | RALT |
   *                   |      |      |      |/       /         \      \ |      |      |      |
   *                   `----------------------------'           '------''--------------------'
   */
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
     KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_HOME, KC_UP, KC_END, \
     KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, \
-    KC_LALT, KC_LGUI, MO(_LOWER), KC_SPC, KC_ENT, MO(_ADJUST), KC_RGUI, KC_RALT \
+    KC_LALT, KC_LGUI, MO(_LOWER), KC_SPC, KC_DEL, MO(_ADJUST), KC_RGUI, KC_RALT \
   ),
 
   /* RAISE
